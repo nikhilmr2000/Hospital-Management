@@ -1,0 +1,29 @@
+<br/>
+<div class="form-body">
+    <br/>
+<h2>Show Patient Information</h2>
+<br/>
+<div class="doc-form">
+    <input placeholder="ID" [(ngModel)]="id"/><br/><br/>
+    <button (click)="getPatientRecord()">Get Patient</button><br/><br/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Visited Doctor Name</th>
+            <th>Date Of Visit</th>
+            <th>Doctor's Prescription</th>
+        </tr>
+        <tr *ngFor="let list of lists">
+            <td>{{list.name}}</td>
+            <td>{{list.age}}</td>
+            <td>{{list.doctor_id.name}}</td>
+            <td>{{list.date}}</td>
+            <td>{{list.prescription}}</td>
+        </tr>
+    </table>
+    <br/><br/>
+</div>
+<button class="go" (click)="goHome()">Go Home</button>
+<br/><br/>
+</div>

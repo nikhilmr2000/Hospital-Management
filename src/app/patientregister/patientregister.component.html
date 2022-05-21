@@ -1,0 +1,37 @@
+<br/>
+<div class="form-body">
+    <body>
+        <br/>
+    <h2>Add Patient</h2> 
+    <div class="doc-form">
+        <div class="no-image">
+        <br/>
+    <label>Patient Name : </label>
+    <input placeholder=" Patient Name" [(ngModel)]="patient.name"/><br/><br/>
+    <label>Age: </label>
+    <input placeholder=" Age" [(ngModel)]="patient.age"/><br/><br/>
+    <label>Date :</label>
+    <input type="date" placeholder=" yyyy-mm-dd " [(ngModel)]="patient.date"/><br/><br/>
+
+    <label>Visited Doctor : </label>
+
+    <select  [(ngModel)]="patient.doctor_id">
+        <optgroup label = "Select a Doctor">
+        <option [ngValue]="list" *ngFor="let list of lists" >{{list.name}}</option>
+        </optgroup>
+    </select><br/><br/>
+
+
+    <label>Doctor Prescription : </label>
+    <textarea [(ngModel)]="patient.prescription"></textarea><br/><br/>
+    <button (click)="postPatients()">Add Patient</button>
+</div>
+
+<div class="image">
+<img src="./assets/images/patients.png" alt="Patients" height="300px" width="400px">
+</div>
+
+</div>
+<div class="clear"></div>
+</body>
+</div>

@@ -1,0 +1,32 @@
+<br/>
+<div class="form-body">
+    <br/>
+    <h2>Show Doctor Information</h2>
+    <div class="doc-form">
+        <select [(ngModel)]="doctorName">
+            <option value="" selected >Select an Doctor</option>
+            <option [value]="newlist.name"  *ngFor="let newlist of doctorlist | async" >{{newlist.name}}</option>
+        </select><br/><br/>
+        <button (click)="showDoctorSelected()">Check</button>
+    <br/><br/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Specialist-Field</th>
+            <th>Number of Patients Attended</th>
+        </tr>
+        <tr *ngFor="let list of lists">
+            <td>{{list.name}}</td>
+            <td>{{list.age}}</td>
+            <td>{{list.gender}}</td>
+            <td>{{list.field}}</td>
+            <td>{{list.attendees}}</td>
+        </tr>
+    </table>
+</div>
+<br/>
+<button class="go" (click)="goHome()">Go Home</button>
+<br/><br/>
+</div> 

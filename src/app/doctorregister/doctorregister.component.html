@@ -1,0 +1,32 @@
+<br/>
+<div class="form-body">
+    <body>
+    <br/>
+<h2>Add Doctor</h2> 
+<div class="doc-form">
+    <div class="no-image">
+    <br/>
+    <label>Name: </label>
+    <input type="text" placeholder="Name" [(ngModel)]="doctor.name"/><br/><br/>
+    <label>Age: </label>
+    <input type="number" placeholder="Age" [(ngModel)]="doctor.age"/><br/><br/>
+    <label>Gender: </label>
+    Male:<input type="radio" name="gender" value="Male" [(ngModel)]="doctor.gender"/>
+    Female:<input type="radio" name="gender" value="Female" [(ngModel)]="doctor.gender"/><br/><br/>
+    <label>Specialist Field:</label>
+    <input type="text" placeholder="Specialist Field" [(ngModel)]="doctor.field"/><br/><br/>
+
+    <button (click)="addDoctor()">Add Doctor</button>
+
+
+
+    <br/>
+    <br/>
+    </div>
+    <div class="image">
+    <img src="./assets/images/doctor.png" alt="Doctor" height="300px" width="400px">
+    </div>
+</div>
+<div class="clear"></div>
+</body>
+</div>

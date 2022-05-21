@@ -1,0 +1,28 @@
+h2{
+    text-align:center;
+}
+.nav .hospital{
+    margin-left:40px;
+    
+}
+.total .nav{
+    border:1 px white ridge;
+}
+.nav .nav-add,.nav .nav-show,.nav .nav-addp,.nav .nav-showp{
+    margin-left:170px;
+}
+.nav .hospital a{
+    font-weight: bold;
+}
+.nav .hospital a:hover{
+    color:#ffffff;
+}
+.nav .nav-add a,.nav .nav-show a,.nav .nav-addp a,.nav .nav-showp a{
+    font-weight: 600;
+}
+.nav .nav-add a:hover,.nav .nav-show a:hover,.nav .nav-addp a:hover,.nav .nav-showp a:hover{
+    color:#ffffff;
+}
+.total{
+    background:linear-gradient(#0dcaf0,white);
+}

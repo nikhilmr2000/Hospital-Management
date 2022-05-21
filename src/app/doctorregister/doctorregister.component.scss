@@ -1,0 +1,26 @@
+.form-body h2{
+    margin-left:30px;
+}
+
+.form-body .doc-form .no-image{
+    float:left;
+    margin-left:30px;
+}   
+.form-body .doc-form{
+    background-color:chartreuse;
+}
+.form-body body{
+    background:chartreuse;
+}
+.clear{
+    clear:both;
+}
+
+.form-body .doc-form .image{
+    margin-bottom:100px;
+    margin-right:170px;
+    float:right;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
